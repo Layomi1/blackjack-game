@@ -15,13 +15,13 @@ let player = {
   chips: 0
 }
   let playerEl= document.querySelector('#player-el');
-  playerEl.textContent = player.name + ':' + ' '+ '$' + player.chips;
+   playerEl.textContent = player.name + ':' + ' '+ '$' + player.chips;
 
    function chipPayment(){
     if(cardSum === 21){
       let chip = 250;
       player.chips+= chip;
-      playerEl.textContent = 'Joe: '+ playerEl.chips;
+      // playerEl.textContent = 'Joe: '+ playerEl.chips;
       dealCards();
       console.log(chip)
     }
