@@ -8,13 +8,17 @@
     <title>Blackjack</title>
 </head>
 <body>
-    <h1>Blackjack</h1>
-    <h4 id="message-el">Do you want to play?</h4>
-    <p class="card-el">Cards: </p>
-    <p class="sum-el">Sum: </p>
-    <button onclick="startGame()">Start game</button>
-    <button onclick="newCard()">New card</button>
+    <div class="card">
+        <h1>Black<span>jack</span></h1>
+        <h4 id="message-el">Do you want to play?</h4>
+        <p class="card-el">Cards: </p>
+        <p class="sum-el">Sum: </p>
+        <button onclick="startGame()">Start game</button>
+        <button onclick="newCard()">New card</button>
+        <p id="player-el">Joe: $0 </p>
 
+    </div>
+    
     <script src="index.js"></script>
 </body>
 </html>

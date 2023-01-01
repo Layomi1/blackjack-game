@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+    padding: 150px 420px;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+}
+.card {
+    background-color: bisque;
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    padding:25px ;
+}
+h1 {
+    margin-bottom: 15px;
+    font-size: 40px;
+} 
+span {
+    color: rgb(182, 40, 40);
+}
+ h4 {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 28px;
+ }
+  p {
+    margin: 5px 0; 
+  }
+   button {
+    padding: 7px 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 12px 5px; 
+    background-color: green;
+    color: #fff;
+    border-radius: 4px;
+    border: 0; 
+
+   }
