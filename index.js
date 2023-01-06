@@ -14,19 +14,17 @@ let player = {
   name: 'Joe',
   chips: 0
 }
-  let playerEl= document.querySelector('#player-el');
-   playerEl.textContent = player.name + ':' + ' '+ '$' + player.chips;
+let playerEl= document.querySelector('#player-el');
+playerEl.textContent = player.name + ':' + ' '+ '$' + player.chips;
 
-   function chipPayment(){
-    if(cardSum === 21){
+function chipPayment(){
+  if(cardSum === 21){
       let chip = 250;
-      player.chips+= chip;
-      // playerEl.textContent = 'Joe: '+ playerEl.chips;
-      dealCards();
+      playerEl.textContent = 'Joe: $'+ chip;
       console.log(chip)
-    }
-   }
-chipPayment();
+  }
+}
+
 
   function getRandomCard(){
     let randomNumber= Math.floor(Math.random()* 13) + 1; 
@@ -60,6 +58,9 @@ chipPayment();
     }else if(cardSum === 21){
       input = "You've won a Blackjack!!!";
        hasBlackjack = true;
+       console.log(input);
+       chipPayment();
+       
     }else {
       input = 'Game Over!'
        isAlive= false;
